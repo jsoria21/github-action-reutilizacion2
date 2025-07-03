@@ -1,9 +1,15 @@
-name: My starter Workflow
+name: My starter Workflow2
 
 on:
  workflow_dispatch:
 
 jobs:
-  call-workflow-in-local-repo:
-    uses: ./.github/workflows/reusable-workflow.yml
+  call-workflow-using-main:
+    uses: jsoria21/github-action-reutilizacion/.github/workflows/reusable-workflow2.yml@main
+  call-workflow-using-branch:
+    uses: jsoria21/github-action-reutilizacion/.github/workflows/reusable-workflow2.yml@2025_01
+
+
+
+
 
